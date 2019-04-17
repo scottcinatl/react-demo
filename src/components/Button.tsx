@@ -1,5 +1,4 @@
 import * as React from 'react'
-import classNames from 'classnames'
 import injectSheet from 'react-jss'
 
 /**
@@ -73,16 +72,17 @@ const styles = {
  */
 interface Props {
   classes: { [className in keyof typeof styles]: string }
+  color: string
   onSubmit: () => void
 }
 
 /**
  * The Button component.
  */
-const Button = ({ classes, onSubmit }: Props) => {
+const Button = ({ classes, color, onSubmit }: Props) => {
   return (
     <div>
-      <button className={classes.button} onClick={onSubmit}>
+      <button className={classes.button} onClick={onSubmit} style={{ backgroundColor: color }}>
         Button
       </button>
     </div>

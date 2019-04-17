@@ -2,11 +2,12 @@ import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { color, withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
-import { Button } from '../Button'
+import { UserInvitations } from '../UserInvitations'
+import { userInvitations } from '../../../../.storybook'
 
-storiesOf('Components', module)
+storiesOf('Modules', module)
   .addDecorator(withKnobs)
-  .add('Button', () => {
+  .add('UserInvitations', () => {
     const buttonColor = color('Color', '#2196F3')
-    return <Button onSubmit={action('onSubmit')} color={buttonColor} />
+    return <UserInvitations userInvitations={userInvitations} />
   })
