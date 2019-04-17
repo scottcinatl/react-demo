@@ -10,11 +10,13 @@
     "@types/react-dom": "16.8.4",
     "@types/react-jss": "^8.6.3",
     "@types/storybook__addon-actions": "^3.4.2",
+    "@types/storybook__addon-knobs": "^4.0.5",
     "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-jss": "^8.6.1",
     "react-scripts": "2.1.8",
+    "semantic-ui-react": "^0.86.0",
     "typescript": "^3.4.3"
   },
   "scripts": {
@@ -37,6 +39,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@storybook/addon-actions": "^5.0.8",
+    "@storybook/addon-knobs": "^5.0.9",
     "@storybook/addon-links": "^5.0.8",
     "@storybook/addons": "^5.0.8",
     "@storybook/react": "^5.0.8",
