@@ -1,7 +1,8 @@
 import * as React from "react";
-import { Button, Card, Image } from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
 import injectSheet from "react-jss";
-import { UserInvitation } from "./UserInvitation";
+import { UserInvitationCard } from "./UserInvitationCard";
+import { UserInvitation } from "../types";
 
 /**
  * The styles for the UserInvitations component.
@@ -11,13 +12,6 @@ const styles = {
     width: "350px !important"
   }
 };
-
-interface UserInvitation {
-  invitationMessage: string;
-  userIcon: string;
-  username: string;
-  userNetwork: string;
-}
 
 /**
  * The props for the UserInvitations component.
@@ -43,7 +37,7 @@ const UserInvitations = ({
   return (
     <Card.Group>
       {userInvitations.map(userInvitation => (
-        <UserInvitation
+        <UserInvitationCard
           isLoading={isLoading}
           onApprove={onApprove}
           onDecline={onDecline}
