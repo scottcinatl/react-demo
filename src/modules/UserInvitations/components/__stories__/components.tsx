@@ -1,10 +1,10 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import { boolean, withKnobs } from "@storybook/addon-knobs";
+import { boolean, withKnobs, number } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
-import { UserInvitation } from "../components/UserInvitation";
-import { UserInvitations } from "../components/UserInvitations";
-import { userInvitations } from "../../../../.storybook";
+import { UserInvitationCard } from "../UserInvitationCard";
+import { UserInvitations } from "../UserInvitations";
+import { getUserInvitations, getUserInvitation } from "../../../../../.storybook";
 
 storiesOf("Modules.UserInvitations", module)
   .addDecorator(withKnobs)
@@ -14,17 +14,17 @@ storiesOf("Modules.UserInvitations", module)
         isLoading={boolean("isLoading", false)}
         onApprove={action("Invitation Approved")}
         onDecline={action("Invitation Declined")}
-        userInvitations={userInvitations}
+        userInvitations={getUserInvitations()}
       />
     );
   })
   .add("UserInvitation", () => {
     return (
-      <UserInvitation
+      <UserInvitationCard
         isLoading={boolean("isLoading", false)}
         onApprove={action("Invitation Approved")}
         onDecline={action("Invitation Declined")}
-        userInvitation={userInvitations[0]}
+        userInvitation={getUserInvitation()}
       />
     );
   });
