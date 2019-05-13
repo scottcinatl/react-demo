@@ -3,6 +3,7 @@ import { Card } from "semantic-ui-react";
 import injectSheet from "react-jss";
 import { UserInvitationCard } from "./UserInvitationCard";
 import { UserInvitation } from "../types";
+import { ResponsiveLayout } from "../../../components/ResponsiveLayout";
 
 /**
  * The styles for the UserInvitations component.
@@ -35,6 +36,7 @@ const UserInvitations = ({
   userInvitations,
 }: Props) => {
   return (
+    <ResponsiveLayout>
     <Card.Group>
       {userInvitations.map(userInvitation => (
         <UserInvitationCard
@@ -45,6 +47,7 @@ const UserInvitations = ({
         />
       ))}
     </Card.Group>
+    </ResponsiveLayout>
   );
 };
 
