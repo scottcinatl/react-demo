@@ -1471,18 +1471,29 @@
     react-select "^2.3.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-links@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.0.8.tgz#2ab42a45641180677561ff8cb069c4bd0877b16a"
-  integrity sha512-KwEIfFgBNcxpTAu+o0L8DV4vg7HP740Fm5RSFH3APGCE8MrmRL+hVcMEcp9KmFf6FMD/V7y5nku4jhlbGjAi1w==
+"@storybook/addon-links@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.0.11.tgz#59a9ce8acc8d5dd7e5622ff875cafc8fe4d6e865"
+  integrity sha512-ZZibz+ROCGz0I8V20jyj8sUjErnbXlFhp5P5xH3reDbfQQwY7ut7BEm0FHM9ksyUA0MvExWmiKuvNDU5dQPqgA==
   dependencies:
-    "@storybook/addons" "5.0.8"
-    "@storybook/core-events" "5.0.8"
+    "@storybook/addons" "5.0.11"
+    "@storybook/core-events" "5.0.11"
     common-tags "^1.8.0"
     core-js "^2.6.5"
     global "^4.3.2"
     prop-types "^15.6.2"
     qs "^6.5.2"
+
+"@storybook/addons@5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.0.11.tgz#86de70747e0a692d9dd8ea431daa1147d8785697"
+  integrity sha512-zw3vjYa2EfFQKKZd8/o44eVy5xaZpFEBY/4mGMBBTQb57H0X1VTzE4VxHrk7fGPJMdmrPfXbYEiQtfHyO56y+w==
+  dependencies:
+    "@storybook/channels" "5.0.11"
+    "@storybook/client-logger" "5.0.11"
+    core-js "^2.6.5"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
 
 "@storybook/addons@5.0.8", "@storybook/addons@^5.0.8":
   version "5.0.8"
@@ -1517,6 +1528,13 @@
     global "^4.3.2"
     telejson "^2.1.0"
 
+"@storybook/channels@5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.0.11.tgz#fae33809ed14187e7962bb10b813085c6838538c"
+  integrity sha512-50kaqBZSkB91c5iXtZ8gGQuj3oOAshGXYukvyw9CsQMdcXtw46hX5DNvdBH7E1UCNtbtk91pS0W0YMbP3avmIQ==
+  dependencies:
+    core-js "^2.6.5"
+
 "@storybook/channels@5.0.8":
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.0.8.tgz#d44517cd6f19f87ccab5e899bd9b515a4395c97c"
@@ -1550,6 +1568,13 @@
     lodash.mergewith "^4.6.1"
     memoizerific "^1.11.3"
     qs "^6.5.2"
+
+"@storybook/client-logger@5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.0.11.tgz#1211421355188f418cc421893f760a2feaf22d27"
+  integrity sha512-UWEdAlihpASAx770jg3JSDPG8ZkH6aiRCpLMwG7PFbfIpi+ZMRUj9SgxTQvj+/FFmzLR+LNBqfGeT8VHF317/g==
+  dependencies:
+    core-js "^2.6.5"
 
 "@storybook/client-logger@5.0.8":
   version "5.0.8"
@@ -1626,6 +1651,13 @@
     reactjs-popup "^1.3.2"
     recompose "^0.30.0"
     render-fragment "^0.1.1"
+
+"@storybook/core-events@5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.0.11.tgz#c7f10df6de6eb9a92cb4fe30b77e956f11b971e6"
+  integrity sha512-hwtazXO9hkoI5vtUm6koJ30+8FzbFuPO35AkAMAue+/OLZWJX3wzQ9gBKR4jOtRcWRRJsaBykltW/VH7b+NoPQ==
+  dependencies:
+    core-js "^2.6.5"
 
 "@storybook/core-events@5.0.8":
   version "5.0.8"
@@ -2149,6 +2181,13 @@
   dependencies:
     "@types/react" "*"
     "@types/storybook__react" "*"
+
+"@types/storybook__addon-links@^3.3.4":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-links/-/storybook__addon-links-3.3.4.tgz#f6ecac5a94389d69c21887d77b79eb40c305418a"
+  integrity sha512-vKYBgSB4hjjmxFN+wDTfrwXYHcduzMkvXNReiMxQNwlUmdHrcvonCTWNux0qQ/C5MRppi1u8Iz2ZkHK0odc8cQ==
+  dependencies:
+    "@types/react" "*"
 
 "@types/storybook__react@*", "@types/storybook__react@^4.0.1":
   version "4.0.1"
