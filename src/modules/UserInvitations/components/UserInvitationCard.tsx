@@ -5,18 +5,11 @@ import { UserInvitation } from "../types";
 import { Button } from "../../../components/Button";
 import injectSheet from "react-jss";
 
-/**
- * The styles for the UserInvitationCard component.
- */
-const styles = {
-  card: {}
-};
 
 /**
  * The props for the UserInvitationCard component.
  */
 interface Props {
-  classes: { [className in keyof typeof styles]: string };
   isLoading: boolean;
   onApprove: () => void;
   onDecline: () => void;
@@ -26,8 +19,7 @@ interface Props {
 /**
  * The UserInvitationCard component.
  */
-const UserInvitationCard = ({
-  classes,
+export const UserInvitationCard = ({
   isLoading,
   onApprove,
   onDecline,
@@ -62,10 +54,4 @@ const UserInvitationCard = ({
       </Card.Content>
     </Card>
   );
-};
-
-/**
- * A component that renders the UserInvitationCard.
- */
-const StyledUserInvitationCard = injectSheet(styles)(UserInvitationCard);
-export { StyledUserInvitationCard as UserInvitationCard };
+}
