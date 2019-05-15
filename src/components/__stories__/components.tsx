@@ -4,6 +4,7 @@ import { boolean, withKnobs, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import { AnimatedButton } from "../AnimatedButton";
 import { Button } from "../Button";
+import { NavigationBar } from "../NavigationBar";
 
 storiesOf("Components", module)
   .addDecorator(withKnobs)
@@ -15,11 +16,11 @@ storiesOf("Components", module)
     );
     return (
       <AnimatedButton
-        hiddenName={text("Hidden Text", 'Are You Sure?')}
+        hiddenName={text("Hidden Text", "Are You Sure?")}
         isLoading={boolean("isLoading", false)}
         onSubmit={action("onSubmit")}
         type={type}
-        visibleName={text("Visible Text", 'Accept')}
+        visibleName={text("Visible Text", "Accept")}
       />
     );
   })
@@ -35,6 +36,26 @@ storiesOf("Components", module)
         name="Button"
         onSubmit={action("onSubmit")}
         type={type}
+      />
+    );
+  })
+  .add("NavigationBar", () => {
+    const path = select(
+      "URL Path",
+      ["/home", "/invitations", "/friends"],
+      "/home"
+    );
+
+    return (
+      <NavigationBar
+        onLogout={action("Logging out")}
+        onNavigateToFriendsPage={action("Navigate to friends page")}
+        onNavigateToInvitationsPage={action(
+          "Navigate to home inivitations page"
+        )}
+        onNavigateToHomePage={action("Navigate to home page")}
+        isLoggingOut={boolean("Is Logging Out", false)}
+        path={path}
       />
     );
   });
