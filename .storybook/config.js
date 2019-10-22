@@ -5,6 +5,5 @@ const context = require.context('../src', true, /(__stories__\/.*|\.stories)\.[t
 configure(loadStories(context), module)
 
 function loadStories(context) {
-  debugger
   context.keys().forEach(filename => context(filename))
 }
